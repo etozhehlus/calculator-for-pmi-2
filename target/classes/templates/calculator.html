@@ -10,9 +10,15 @@
     <meta property="og:url" content=""/>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <title>Калькулятор</title>
+    <meta charset="utf-8">
+    <style>
+	   .dashed {
+	   border-bottom: 5px dashed purple;
+	   }
+	</style>
 </head>
 <body>
-<header><h1 id="app">Калькулятор</h1></header>
+<header><h1 id="app"><span class="dashed">Калькулятор</span></h1></header>
 <section>
     <h2>Состояние калькулятора</h2>
     <p th:text="'Текущее значение: ' + ${result}"></p>
