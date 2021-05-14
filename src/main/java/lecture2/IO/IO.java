@@ -15,7 +15,7 @@ public class IO {
         ous.writeObject(object);
     }
 
-    public Object readFromFile(File file) throws IOException, ClassNotFoundException {
+    public static Object readFromFile(File file) throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
         Object object = ois.readObject();

@@ -20,4 +20,8 @@ public class Calculator implements Serializable {
     public void minus(double number) {
         this.state -= number;
     }
+
+    public void setState(Double state) {
+        this.state = state;
+    }
 }
