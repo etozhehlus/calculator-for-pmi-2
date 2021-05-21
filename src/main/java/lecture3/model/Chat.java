@@ -1,15 +1,16 @@
 package lecture3.model;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.LinkedList;
 
 @Data
+@AllArgsConstructor
 public class Chat implements Serializable {
     private LinkedList<Message> history;
-    private ObjectMapper mapper = new ObjectMapper();
 
     public Chat() {
         this.history = new LinkedList<>();
